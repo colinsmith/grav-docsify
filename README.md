@@ -1,8 +1,6 @@
 # Grav Docsify
 
-![Grav Docsify](screenshot.png)
-
-Grav Docsify is a project that aims to bring the sleek and flexible UI from Docisfy to Grav! Inspired by the [Grav Learn](http://learn.getgrav.org) and [Learn2](https://github.com/getgrav/grav-theme-learn2) themes.
+Grav Docsify is a project that aims to bring the sleek and flexible UI from Docsify to Grav! Inspired by the [Grav Learn](http://learn.getgrav.org) and [Learn2](https://github.com/getgrav/grav-theme-learn2) themes.
 
 ## Installation
 

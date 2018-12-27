@@ -1,0 +1,39 @@
+name: docsify
+version: 1.0.0
+description: "Docsify Minimal Documentation Theme for Grav"
+icon: book
+author:
+  name: Colin Smith
+  email: colin@colinsmithdesign.ca
+homepage: https://github.com/colinsmith/grav-docsify
+demo: http://learn.getgrav.org
+keywords: docs, documentation, modern, fast, responsive, html5, css3
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    top_level_version:
+        type: toggle
+        label: Top Level Version
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    home_url:
+        type: text
+        label: Home URL
+        placeholder: http://getgrav.org
+        validate:
+          type: text
+
+    google_analytics_code:
+        type: text
+        label: Google Analytics Code
+        placeholder: UA-XXXXXXXX-X
+        validate:
+          type: text

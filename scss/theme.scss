@@ -1,0 +1,84 @@
+// Remove padding from page
+.content {
+	padding: 0;
+}
+
+// Sidebar toggle icon
+.sidebar-toggle {
+  position: fixed;
+  width: auto;
+}
+
+// Sidebar style
+.sidebar {
+  position: fixed;
+  padding: 0;
+
+  a {
+    padding: .25rem 0;
+  }
+
+  // Bold parent items
+  .parent {
+		> a {
+			font-weight: 700;
+			margin: 0;
+		}
+  }
+}
+
+// Search results
+.search {
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #eeeeee;
+
+  input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: .25rem .5rem;
+    line-height: 1.2rem;
+    font-size: .85rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin: .5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .route {
+    font-size: .8rem;
+    font-style: italic;
+  }
+
+  .tntsearch-dropdown ~ .tntsearch-results .row {
+    width: 100%;
+    box-shadow: none;
+  }
+
+	.tntsearch-dropdown {
+		padding: .5rem;
+	}
+
+	.tntsearch-clear {
+		line-height: 1.5rem;
+    font-size: 1.8rem;
+    padding: .5rem 1rem;
+		color: #cccccc;
+	}
+
+	.tntsearch-ajax-result {
+		display: block;
+		padding: 1rem;
+
+		&:hover {
+			color: #000000;
+			background-color: #f5f5f5;
+		}
+	}
+}

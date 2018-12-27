@@ -1,0 +1,55 @@
+{% macro loop(page, parent_loop) %}
+
+  {% if page.parent.root %}
+    <ul>
+      <li class="parent {% if page.active %}active{% endif %}"><a href="{{ page.url }}">{{page.title}}</a></li>
+  {% endif %}
+    
+  {% for p in page.children.visible %}
+    
+    {% set parent_page = p.activeChild ? ' parent' : '' %}
+    {% set current_page = p.active ? ' active' : '' %}
+    
+    <ul>
+      <li class="child-{{ current_page }}" data-nav-id="{{ p.route }}">
+        <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
+          {{ p.menu }}
+        </a>
+        
+        {% if p.children.count > 0 %}
+          {{ _self.loop(p, parent_loop | default(0) + loop.index) }}
+        {% endif %}
+      </li>
+    </ul>
+
+  {% endfor %}
+
+  {% if page.parent.root %}
+    </ul>
+  {% endif %}
+
+{% endmacro %}
+
+<aside class="sidebar">
+
+  {% if config.plugins.tntsearch.enabled %}
+    <div class="search">
+      {% include 'partials/searchbox.html.twig' %}
+    </div>
+  {% endif %}
+
+  <h1 class="app-name"><a class="app-name-link" data-nosearch="" href="{{ home_url }}">{{ config.site.title }}</a></h1>
+
+  {% for slug, ver in pages.children %}
+    {{ _self.loop(ver, '') }}
+  {% endfor %}
+
+</aside>
+
+<button id="navigation" class="sidebar-toggle">
+  <div class="sidebar-toggle-button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</button>

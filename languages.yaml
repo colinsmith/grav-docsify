@@ -1,0 +1,24 @@
+en:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Search Documentation
+cn:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: 搜索文档
+cs:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Postaveno na <a href="http://getgrav.org">Grav</a> - Moderní správce obsahu pomocí souborů prostých textů
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Vyhledat v dokumentaci
+de:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Seite erstellt mit <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Dokumentation durchsuchen
+es:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Hecho con <a href="http://getgrav.org">Grav</a> - El CMS moderno de archivos planos
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Buscar en la documentación
+fr:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Créé avec <a href="http://getgrav.org">Grav</a> - Le CMS moderne sans base de données
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Rechercher dans la documentation
+it:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Cerca nella Documentatione
+ru:
+    THEME_DOCSIFY_BUILT_WITH_GRAV: Сделано на <a href="http://getgrav.org">Grav</a> — современной файловой CMS
+    THEME_DOCSIFY_SEARCH_DOCUMENTATION: Поиск по документации

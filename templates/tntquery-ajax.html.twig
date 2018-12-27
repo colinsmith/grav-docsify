@@ -1,0 +1,21 @@
+<div class="tntsearch-ajax-results row">
+
+  <p class="info">
+    {% if config.get('plugins.tntsearch.display_hits') %}
+      <span class="hits">Found {{ tntsearch_results.number_of_hits }} results</span>
+    {% endif %}
+  </p>
+
+  {% for key, val in tntsearch_results.hits  %}
+      
+    <a class="tntsearch-ajax-result" href="{{ base_url ~ val.link }}">
+      <h1 class="title">{{ val.title }}</h1>
+      {% if config.get('plugins.tntsearch.display_route') %}
+        <span class="route">{{ val.link }}</span>
+      {% endif %}
+      <p>{{ val.content }}</p>
+    </a>
+
+  {% endfor %}
+
+</div>

@@ -12,7 +12,7 @@ To install this theme:
 2. Unzip it under `/your/site/grav/user/themes`
 3. Rename the folder to `docsify`.
 
-Optional Search Support:
+### Optional Search Support
 
 This theme uses TNT Search for quick, in-place search. Install [TNT Search](https://github.com/trilbymedia/grav-plugin-tntsearch) using GPM: 
 
